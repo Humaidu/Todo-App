@@ -1,0 +1,26 @@
+{% extends "base.html" %}
+
+
+{% block content %}
+
+<style>
+  .welcome h2{
+   margin-top: 15px;
+   color: crimson;
+   
+ }
+
+ .welcome img{
+    max-width :50%;
+     max-height : 50%;
+ }
+</style>
+ <div class="welcome ">
+     <h2 class="text-center text-primary " style="color: crimson;">TODOLIST MANAGEMENT SYSTEM</h2>
+       
+        <img src="{{ url_for('static', filename = 'images/todo1.svg') }}" class="rounded mx-auto d-block img-fluid"/>
+      
+ </div>
+ 
+  
+{% endblock %}
